@@ -11,6 +11,9 @@ const app = new Vue({
            'img/image4.jpg', 
         ]
     },
+    mounted() {
+        this.scorrimento();
+    },
     // evento di incremento e decremento
     methods: {
         fotoPrecedente() {
@@ -21,10 +24,15 @@ const app = new Vue({
         fotoSuccessiva() {
             this.contatore += 1;
             if(this.contatore == (this.photos.length)) this.contatore = 0; // se il contatore é = 4 ci riporta a 0
+        },
+        scorrimento() {
+            setInterval(() => {
+                this.fotoSuccessiva();
+            },2000);
         }
+        
     }
-})
-
+});
 
 
 
