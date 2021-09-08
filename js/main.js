@@ -1,7 +1,16 @@
 // Descrizione:
 // Rifare l'esercizio dello slider come fatto assieme in classe.
 const app = new Vue({
-    el: '#root'
+    el: '#root',
+    data: {
+        contatore: 0,
+        photos: [
+           'img/image1.jpg',
+           'img/image2.jpg', 
+           'img/image3.jpg',
+           'img/image4.jpg', 
+        ]
+    }
 })
 
 
