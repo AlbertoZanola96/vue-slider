@@ -15,9 +15,12 @@ const app = new Vue({
     methods: {
         fotoPrecedente() {
             this.contatore -= 1;
+            if(this.contatore < 0) this.contatore = (this.photos.length - 1); // inseriamo il meno 1 dato che gli array contano da 0
+            
         },
         fotoSuccessiva() {
             this.contatore += 1;
+            if(this.contatore == (this.photos.length)) this.contatore = 0; // se il contatore é = 4 ci riporta a 0
         }
     }
 })
