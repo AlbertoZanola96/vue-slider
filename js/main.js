@@ -10,6 +10,15 @@ const app = new Vue({
            'img/image3.jpg',
            'img/image4.jpg', 
         ]
+    },
+    // evento di incremento e decremento
+    methods: {
+        fotoPrecedente() {
+            this.contatore -= 1;
+        },
+        fotoSuccessiva() {
+            this.contatore += 1;
+        }
     }
 })
 

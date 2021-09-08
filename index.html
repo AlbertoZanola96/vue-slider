@@ -11,13 +11,13 @@
 <body>
     <div id="root" class="container">
         <div class="wrapper">
-            <div class="prima">
+            <div class="prima" @click = "fotoPrecedente"> <!-- con @click richiamo il metodo al evento click -->
                 <i class="fas fa-arrow-circle-left"></i>
             </div>
             <div class="immagini">
-                <img :src="photos[contatore]" alt="">
+                <img :src="photos[contatore]" alt=""> <!-- shortcut di v-bind -->
             </div>
-            <div class="dopo">
+            <div class="dopo" @click = "fotoSuccessiva"> <!-- con @click richiamo il metodo al evento click -->
                 <i class="fas fa-arrow-circle-right"></i>
             </div>
         </div>
