@@ -21,7 +21,7 @@
                 <i class="fas fa-arrow-circle-right"></i>
             </div>
             <div class="nav">
-                <i v-for = "photo in photos" class="fas fa-circle"></i>
+                <i :class = "(index == contatore) ? 'attivo' : null" v-for = "(photo, index) in photos" class="fas fa-circle"></i> <!-- se il mio indice e = al contatore allora assegno la classe attivo -->
             </div>
         </div>
     </div>

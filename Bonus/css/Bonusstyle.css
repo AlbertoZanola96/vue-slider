@@ -60,3 +60,6 @@ body {
     margin: 0 20px;
 }
 
+.nav > i.attivo {
+    color: blue;
+}
