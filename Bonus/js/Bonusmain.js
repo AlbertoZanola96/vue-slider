@@ -26,8 +26,8 @@ const app = new Vue({
             if(this.contatore == (this.photos.length)) this.contatore = 0; // se il contatore é = 4 ci riporta a 0
         },
         scorrimento() {
-            setInterval(() => {
-                this.fotoSuccessiva();
+            setInterval(() => { // setInterval attiva una funzione all’infinito, ogni tot di tempo.
+                this.fotoSuccessiva(); // nelle Arrow Function il nostro this rappresenta lo scope nella quale è stata invocata
             },2000);
         }
         
