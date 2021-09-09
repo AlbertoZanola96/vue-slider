@@ -11,7 +11,7 @@ const app = new Vue({
            'img/image4.jpg', 
         ]
     },
-    created() {
+    mounted() {
         this.scorrimento();
     },
     // evento di incremento e decremento
